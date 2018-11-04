@@ -2,6 +2,7 @@
 Created on Oct 12, 2016
 
 @author: mwittie
+@author: adixon
 '''
 import network
 import link
@@ -81,8 +82,11 @@ if __name__ == '__main__':
     
     
     #create some send events    
+#     for i in range(3):
+#         client1.udt_send(3, 'Sample data %d' % i)
+        
     for i in range(3):
-        client1.udt_send(3, 'Sample data %d' % i)
+        client2.udt_send(4, 'This is a test %d' % i)
     
     
     #give the network sufficient time to transfer all packets before quitting
